@@ -1,0 +1,21 @@
+<extension xmlns="http://ns.adobe.com/air/extension/2.5">
+    <id>jp.highreso.air.ane.getimei</id>
+    <versionNumber>1.0.0</versionNumber>
+        <platforms>
+            <platform name="iPhone-ARM">
+                <applicationDeployment/> 
+            </platform>
+
+            <platform name="Android-ARM">
+                <applicationDeployment>
+                    <nativeLibrary>GetIMEI.jar</nativeLibrary>
+                    <initializer>jp.highreso.air.android.getimei.GetIMEIMain</initializer>
+                    <finalizer>jp.highreso.air.android.getimei.GetIMEIMain</finalizer>
+                </applicationDeployment>
+            </platform>
+
+            <platform name="default">
+                <applicationDeployment/> 
+            </platform> 
+        </platforms>
+</extension>
